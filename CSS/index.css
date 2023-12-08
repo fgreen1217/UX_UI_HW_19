@@ -39,6 +39,7 @@ nav il{
     color:#18272F;
 }
 
+
 /* About Section */
 .heroimg{
     background-color:#DEAA97;
@@ -127,21 +128,42 @@ nav il{
 
 .flexContainer{
     display:flex;
+    height:100%;
     flex-direction:row;
     justify-content:space-evenly;
+    align-items: start;
     margin: 15px;
 }
 
 .flexContainer>div{
     background-color:rgba(152, 85, 41,0.75);
-    width:30%;
+    width:25%;
     padding:010px;
     border-radius: 15px;
+    height:100%;
     text-align: center;
 }
 
+.flexContainer>div:hover{
+    background-color:#EBECE9;
+    outline:5px solid rgba(152, 85, 41,0.75);
+    width:25%;
+    padding:010px;
+    border-radius: 15px;
+    height:100%;
+    text-align: center;
+}
 .imgSkl{
     width:100%;
+}
+
+.info{
+    height:200px;
+    display: none;
+}
+
+.flexContainer>div>h3{
+    height: 100%;
 }
 
 /* My Case Studies*/
@@ -269,7 +291,6 @@ nav il{
     border-color:#373F42;
 }
 
-
 /* Footer */
 
 footer{
@@ -279,7 +300,8 @@ footer{
     font-size:20px;
     font-weight: 400;
     padding:1%;
-    height:60px
+    height:60px;
+    color:#d8e0e4
    
 }
 
@@ -354,26 +376,4 @@ p.light{
     font-weight:400;
     color:#EBECE9;
     line-height: 20px;
-}
-
-
-
-@media only screen and (max-width: 600px) {
-    .flexContainer{
-    display:flex;
-    flex-direction:column;
-    }
-    
-  .workGrid{
-    grid-template-rows: 1/5 1/5 1/5 1/5 1/5 1/5;
-    grid-template-columns: 100%;
-    grid-template-areas:
-      "imgFst"
-      "txtFst"
-      "imgSec"
-      "texSec"
-      "imgThi"
-      "txtThi"
-    ;
-  }
 }
